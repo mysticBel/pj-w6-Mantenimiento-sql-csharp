@@ -16,7 +16,7 @@ namespace pj_w6_Mantenimiento_sql_csharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MenuPrincipal());
         }
     }
 }

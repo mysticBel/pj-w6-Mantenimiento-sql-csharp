@@ -16,5 +16,12 @@ namespace pj_w6_Mantenimiento_sql_csharp
         {
             InitializeComponent();
         }
+
+        private void frmListadoVendedores_Load(object sender, EventArgs e)
+        {
+            DAOVendedor objDAO = new DAOVendedor();
+            dgVendedores.DataSource = objDAO.listadoVendedores();
+            dgVendedores.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+        }
     }
 }
