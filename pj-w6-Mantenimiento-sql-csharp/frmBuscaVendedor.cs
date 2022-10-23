@@ -23,14 +23,22 @@ namespace pj_w6_Mantenimiento_sql_csharp
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            int codigo = int.Parse(txtCodigo.Text);
-            DataRow dr = objDAO.buscaVendedor(codigo).Rows[0];
+            try
+            {
+                int codigo = int.Parse(txtCodigo.Text);
+                DataRow dr = objDAO.buscaVendedor(codigo).Rows[0];
 
-            txtNombres.Text = dr[1].ToString();
-            txtApellidos.Text = dr[2].ToString();
-            txtSueldo.Text = dr[3].ToString();
-            dtFecha.Value = DateTime.Parse(dr[4].ToString());
-            cboDistrito.Text = dr[5].ToString();
+                txtNombres.Text = dr[1].ToString();
+                txtApellidos.Text = dr[2].ToString();
+                txtSueldo.Text = dr[3].ToString();
+                dtFecha.Value = DateTime.Parse(dr[4].ToString());
+                cboDistrito.Text = dr[5].ToString();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Vendedor NO existe..!!!");
+            }
         }
+
     }
 }

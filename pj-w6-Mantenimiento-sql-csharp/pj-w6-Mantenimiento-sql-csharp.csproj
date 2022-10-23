@@ -88,6 +88,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vendedor.cs" />
+    <EmbeddedResource Include="frmActualizaVendedor.resx">
+      <DependentUpon>frmActualizaVendedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBuscaVendedor.resx">
       <DependentUpon>frmBuscaVendedor.cs</DependentUpon>
     </EmbeddedResource>
