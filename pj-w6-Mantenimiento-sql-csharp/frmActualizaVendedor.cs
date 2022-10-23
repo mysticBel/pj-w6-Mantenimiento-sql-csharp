@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pj_w6_Mantenimiento_sql_csharp
 {
-    public partial class Form1 : Form
+    public partial class frmActualizaVendedor : Form
     {
-        public Form1()
+        public frmActualizaVendedor()
         {
             InitializeComponent();
         }
