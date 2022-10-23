@@ -94,6 +94,9 @@
     <EmbeddedResource Include="frmBuscaVendedor.resx">
       <DependentUpon>frmBuscaVendedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminaVendedor.resx">
+      <DependentUpon>frmEliminaVendedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListadoVendedores.resx">
       <DependentUpon>frmListadoVendedores.cs</DependentUpon>
     </EmbeddedResource>
