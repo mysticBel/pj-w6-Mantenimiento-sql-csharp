@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,6 +39,9 @@
             this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -56,22 +56,6 @@
             this.menuStrip.Size = new System.Drawing.Size(632, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
-            // 
-            // statusStrip
-            // 
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 431);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Size = new System.Drawing.Size(632, 22);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "StatusStrip";
-            // 
-            // toolStripStatusLabel
-            // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
-            this.toolStripStatusLabel.Text = "Estado";
             // 
             // mantenimientoToolStripMenuItem
             // 
@@ -130,16 +114,32 @@
             // generalToolStripMenuItem
             // 
             this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
-            this.generalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.generalToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.generalToolStripMenuItem.Text = "General";
             this.generalToolStripMenuItem.Click += new System.EventHandler(this.generalToolStripMenuItem_Click);
             // 
             // buscarToolStripMenuItem
             // 
             this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.buscarToolStripMenuItem.Text = "Buscar";
             this.buscarToolStripMenuItem.Click += new System.EventHandler(this.buscarToolStripMenuItem_Click);
+            // 
+            // statusStrip
+            // 
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 431);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(632, 22);
+            this.statusStrip.TabIndex = 2;
+            this.statusStrip.Text = "StatusStrip";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
+            this.toolStripStatusLabel.Text = "Estado";
             // 
             // MenuPrincipal
             // 
@@ -153,7 +153,6 @@
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);

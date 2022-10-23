@@ -12,7 +12,6 @@ namespace pj_w6_Mantenimiento_sql_csharp
 {
     public partial class MenuPrincipal : Form
     {
-        private int childFormNumber = 0;
 
         public MenuPrincipal()
         {
@@ -20,11 +19,6 @@ namespace pj_w6_Mantenimiento_sql_csharp
         }
 
      
-        private void MenuPrincipal_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (Form childForm1 in MdiChildren)

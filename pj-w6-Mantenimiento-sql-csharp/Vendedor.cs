@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pj_w6_Mantenimiento_sql_csharp
 {
-    internal class Vendedor
+    public class Vendedor
     {
         public int ide_ven { get; set; }
         public string nom_ven { get; set; }
