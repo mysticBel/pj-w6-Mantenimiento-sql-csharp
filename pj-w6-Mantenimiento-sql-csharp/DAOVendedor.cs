@@ -42,8 +42,9 @@ namespace pj_w6_Mantenimiento_sql_csharp
             cn.Open();
             SqlCommand cmd = new SqlCommand("SP_NUEVOCODIGO", cn);
             cmd.CommandType = CommandType.StoredProcedure;
+            int n = int.Parse(cmd.ExecuteScalar().ToString());
             cn.Close();
-            return int.Parse(cmd.ExecuteScalar().ToString());
+            return n;
         }
 
 

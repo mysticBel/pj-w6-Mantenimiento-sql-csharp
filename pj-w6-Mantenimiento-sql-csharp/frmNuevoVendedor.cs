@@ -47,5 +47,11 @@ namespace pj_w6_Mantenimiento_sql_csharp
                 (ex.Message);
             }
         }
+
+        private void frmNuevoVendedor_Load(object sender, EventArgs e)
+        {
+            int n = objDAO.generaCodigo();
+            lblCodigo.Text = n.ToString("0000");
+        }
     }
 }
