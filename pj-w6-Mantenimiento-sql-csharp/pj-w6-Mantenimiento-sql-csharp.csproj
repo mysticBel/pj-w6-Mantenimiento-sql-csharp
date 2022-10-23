@@ -91,6 +91,9 @@
     <EmbeddedResource Include="frmListadoVendedores.resx">
       <DependentUpon>frmListadoVendedores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNuevoVendedor.resx">
+      <DependentUpon>frmNuevoVendedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
